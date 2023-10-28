@@ -28,7 +28,7 @@
 				<configuration>
 				   <cloudHubDeployment>
 				      <uri>https://anypoint.mulesoft.com</uri>
-				      <muleVersion>4.5.0:24e</muleVersion>
+				      <muleVersion>4.5.0</muleVersion>
 				      <username>ashu920</username>
 				      <password>Ashu@311211</password>
 				      <applicationName>CICD111</applicationName>
