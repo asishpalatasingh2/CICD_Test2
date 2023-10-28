@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>cicd</artifactId>
+	<artifactId>cicd_new</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>cicd</name>
+	<name>cicd_new</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,33 +19,28 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.2.0</version>
-			</plugin>
+			
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				  <configuration>
-					    <cloudHubDeployment>
-					      <uri>https://anypoint.mulesoft.com</uri>
-					      <muleVersion>4.5.0</muleVersion>
-					      <username>ashu920</username>
-					      <password>Ashu@311211</password>
-					      <applicationName>CICD111</applicationName>
-					      <environment>Sandbox</environment>
-					      <workers>1</workers>
-					      <workerType>MICRO</workerType>
-					      <properties>
-					        <key>value</key>
-					      </properties>
-					    </cloudHubDeployment>
-  					</configuration>
+				<configuration>
+				   <cloudHubDeployment>
+				      <uri>https://anypoint.mulesoft.com</uri>
+				      <muleVersion>4.5.0:24e</muleVersion>
+				      <username>ashu920</username>
+				      <password>Ashu@311211</password>
+				      <applicationName>CICD111</applicationName>
+				      <environment>Sandbox</environment>
+				      <workers>1</workers>
+				      <workerType>MICRO</workerType>
+				      <properties>
+				        <key>value</key>
+				      </properties>
+				   </cloudHubDeployment>
+				</configuration>
 			</plugin>
-			
 		</plugins>
 	</build>
 
